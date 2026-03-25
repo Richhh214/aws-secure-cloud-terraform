@@ -100,3 +100,12 @@ To remove all resources and avoid AWS charges:
 
 ```bash
 terraform destroy
+
+## Resume Highlights
+
+- Built and deployed AWS infrastructure using Terraform (IaC)
+- Designed secure VPC architecture with public subnet and routing
+- Configured EC2 web server with Apache and public access validation
+- Implemented security group rules restricting SSH access to a specific IP
+- Secured S3 bucket using block public access settings
+- Demonstrated full deployment lifecycle: plan → apply → validate → destroy
