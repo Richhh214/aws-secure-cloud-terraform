@@ -1,3 +1,7 @@
+## Architecture Diagram
+
+![Architecture](screenshots/terraform-diagram.png)
+
 # AWS Secure Cloud Environment (Terraform)
 
 This project demonstrates how to design, deploy, and secure AWS infrastructure using Terraform. It showcases a production-style cloud environment with networking, compute, and storage components built using Infrastructure as Code (IaC).
@@ -100,6 +104,18 @@ To remove all resources and avoid AWS charges:
 
 ```bash
 terraform destroy
+
+## Why This Project Matters
+
+This project demonstrates real-world cloud engineering skills, including:
+
+- Infrastructure as Code (Terraform)
+- Secure network design (VPC, subnets, routing)
+- Access control and least privilege principles
+- Web server deployment and validation
+- Troubleshooting cloud deployment issues
+
+These are directly applicable to roles such as Cloud Engineer, DevOps Engineer, and Cybersecurity Analyst.
 
 ## Resume Highlights
 
