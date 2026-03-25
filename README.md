@@ -84,6 +84,16 @@ During the deployment, I encountered and resolved several real-world issues:
 
 Deployed AWS infrastructure using Terraform, including a custom VPC, subnet, internet gateway, security group, EC2 web server, and secure S3 bucket, while troubleshooting IAM permissions, SSH access, and OS-specific configuration issues.
 
+## How to Run
+
+1. Copy `terraform.tfvars.example` to `terraform.tfvars`
+2. Update the values for region, AMI, key pair, bucket name, and IP
+3. Run `terraform init`
+4. Run `terraform plan`
+5. Run `terraform apply`
+6. Access the EC2 public IP in a browser
+7. Run `terraform destroy` when finished
+
 ## Cleanup
 
 To remove all resources and avoid AWS charges:
