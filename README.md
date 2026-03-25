@@ -2,11 +2,11 @@
 
 This project demonstrates how to design, deploy, and secure AWS infrastructure using Terraform. It showcases a production-style cloud environment with networking, compute, and storage components built using Infrastructure as Code (IaC).
 
-## 🚀 Project Summary
+## Project Summary
 
 In this project, I deployed a secure AWS environment using Terraform, including a custom VPC, EC2 web server, and S3 storage. The focus was on implementing security best practices, automating infrastructure, and troubleshooting real-world cloud deployment issues.
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 The environment consists of:
 
@@ -18,21 +18,21 @@ The environment consists of:
 - EC2 Ubuntu instance hosting a web server
 - S3 bucket with public access blocked
 
-## 🔐 Security Implementation
+## Security Implementation
 
 - Restricted SSH access using CIDR-based IP filtering
 - Allowed HTTP (port 80) for controlled web access
 - Enforced S3 Block Public Access settings
 - Applied least-exposure principles in security group rules
 
-## ⚙️ Technologies Used
+## Technologies Used
 
 - AWS (EC2, VPC, S3, Security Groups)
 - Terraform
 - Linux (Ubuntu)
 - Apache Web Server
 
-## 📸 Project Evidence
+## Project Evidence
 
 ### Terraform Apply (Successful Deployment)
 ![Terraform Apply](screenshots/terraform-apply.png)
@@ -49,7 +49,7 @@ The environment consists of:
 ### S3 Bucket Security
 ![S3](screenshots/terraform-s3.png)
 
-## 🛠️ Challenges & Solutions
+## Challenges & Solutions
 
 During the deployment, I encountered and resolved several real-world issues:
 
@@ -70,7 +70,7 @@ During the deployment, I encountered and resolved several real-world issues:
 - **SSH Connectivity Issues**
   - Resolved key permissions and correct username (`ubuntu`)
 
-## 💡 Key Skills Demonstrated
+## Key Skills Demonstrated
 
 - Infrastructure as Code (Terraform)
 - AWS networking (VPC, subnets, routing)
@@ -80,11 +80,11 @@ During the deployment, I encountered and resolved several real-world issues:
 - Linux system administration
 - Cloud troubleshooting and debugging
 
-## 📌 Resume-Ready Summary
+## Resume-Ready Summary
 
 Deployed AWS infrastructure using Terraform, including a custom VPC, subnet, internet gateway, security group, EC2 web server, and secure S3 bucket, while troubleshooting IAM permissions, SSH access, and OS-specific configuration issues.
 
-## 🧹 Cleanup
+## Cleanup
 
 To remove all resources and avoid AWS charges:
 
