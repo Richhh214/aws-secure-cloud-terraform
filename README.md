@@ -1,2 +1,92 @@
-# aws-secure-cloud-terraform
-AWS cloud security lab demonstrating VPC design, EC2 deployment, S3 security, and Infrastructure as Code using Terraform.
+# AWS Secure Cloud Environment (Terraform)
+
+This project demonstrates how to design, deploy, and secure AWS infrastructure using Terraform. It showcases a production-style cloud environment with networking, compute, and storage components built using Infrastructure as Code (IaC).
+
+## 🚀 Project Summary
+
+In this project, I deployed a secure AWS environment using Terraform, including a custom VPC, EC2 web server, and S3 storage. The focus was on implementing security best practices, automating infrastructure, and troubleshooting real-world cloud deployment issues.
+
+## 🏗️ Architecture Overview
+
+The environment consists of:
+
+- Custom Virtual Private Cloud (VPC)
+- Public subnet with internet access
+- Internet Gateway for external connectivity
+- Route table configured for outbound traffic
+- Security group with controlled access rules
+- EC2 Ubuntu instance hosting a web server
+- S3 bucket with public access blocked
+
+## 🔐 Security Implementation
+
+- Restricted SSH access using CIDR-based IP filtering
+- Allowed HTTP (port 80) for controlled web access
+- Enforced S3 Block Public Access settings
+- Applied least-exposure principles in security group rules
+
+## ⚙️ Technologies Used
+
+- AWS (EC2, VPC, S3, Security Groups)
+- Terraform
+- Linux (Ubuntu)
+- Apache Web Server
+
+## 📸 Project Evidence
+
+### Terraform Apply (Successful Deployment)
+![Terraform Apply](screenshots/terraform-apply.png)
+
+### EC2 Instance Running
+![EC2 Instance](screenshots/terraform-ec2.png)
+
+### Security Group Configuration
+![Security Group](screenshots/terraform-security-group.png)
+
+### Web Server Verification
+![Web Server](screenshots/terraform-web-server.png)
+
+### S3 Bucket Security
+![S3](screenshots/terraform-s3.png)
+
+## 🛠️ Challenges & Solutions
+
+During the deployment, I encountered and resolved several real-world issues:
+
+- **IAM Permission Errors**
+  - Terraform initially failed due to insufficient permissions
+  - Resolved by using a properly privileged IAM user
+
+- **S3 Bucket Naming Conflict**
+  - Bucket names must be globally unique
+  - Adjusted naming to resolve conflict
+
+- **Operating System Mismatch**
+  - Initial script used Amazon Linux commands (`dnf`, `httpd`)
+  - Instance used Ubuntu, requiring:
+    - `apt` instead of `dnf`
+    - `apache2` instead of `httpd`
+
+- **SSH Connectivity Issues**
+  - Resolved key permissions and correct username (`ubuntu`)
+
+## 💡 Key Skills Demonstrated
+
+- Infrastructure as Code (Terraform)
+- AWS networking (VPC, subnets, routing)
+- Cloud security configuration
+- EC2 deployment and configuration
+- S3 security best practices
+- Linux system administration
+- Cloud troubleshooting and debugging
+
+## 📌 Resume-Ready Summary
+
+Deployed AWS infrastructure using Terraform, including a custom VPC, subnet, internet gateway, security group, EC2 web server, and secure S3 bucket, while troubleshooting IAM permissions, SSH access, and OS-specific configuration issues.
+
+## 🧹 Cleanup
+
+To remove all resources and avoid AWS charges:
+
+```bash
+terraform destroy
