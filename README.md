@@ -89,6 +89,7 @@ During the deployment, I encountered and resolved several real-world issues:
 Deployed AWS infrastructure using Terraform, including a custom VPC, subnet, internet gateway, security group, EC2 web server, and secure S3 bucket, while troubleshooting IAM permissions, SSH access, and OS-specific configuration issues.
 
 ## How to Run
+Follow these steps to deploy the infrastructure using Terraform:
 
 1. Copy `terraform.tfvars.example` to `terraform.tfvars`
 2. Update the values for region, AMI, key pair, bucket name, and IP
