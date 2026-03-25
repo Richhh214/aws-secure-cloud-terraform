@@ -105,7 +105,7 @@ To remove all resources and avoid AWS charges:
 
 ```bash
 terraform destroy
-
+```
 ## Why This Project Matters
 
 This project demonstrates real-world cloud engineering skills, including:
