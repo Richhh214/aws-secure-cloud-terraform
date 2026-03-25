@@ -103,8 +103,8 @@ Deployed AWS infrastructure using Terraform, including a custom VPC, subnet, int
 To remove all resources and avoid AWS charges:
 
 ```bash
-
 terraform destroy
+
 
 ## Why This Project Matters
 
