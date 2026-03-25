@@ -98,13 +98,13 @@ Deployed AWS infrastructure using Terraform, including a custom VPC, subnet, int
 6. Access the EC2 public IP in a browser
 7. Run `terraform destroy` when finished
 
+```markdown
 ## Cleanup
 
 To remove all resources and avoid AWS charges:
 
 ```bash
 terraform destroy
-
 
 ## Why This Project Matters
 
